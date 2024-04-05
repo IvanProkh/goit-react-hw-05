@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
 import { getMovie } from '../../api/api';
-import MovieList from '../../components/MovieList/MovieList';
-import css from './MoviesPage.module.css';
 import { useSearchParams } from 'react-router-dom';
 import { IoIosArrowUp } from 'react-icons/io';
+
+import css from './MoviesPage.module.css';
+//~ ------ components ------
+import MovieList from '../../components/MovieList/MovieList';
 import SearchInput from '../../components/SearchInput/SearchInput';
 
 export default function MoviesPage() {

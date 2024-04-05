@@ -13,7 +13,6 @@ export default function Navigation() {
         Filmopolis
         <BiSolidCameraMovie className={css.icon} />
       </h1>
-      {/* <BiSolidCameraMovie className={css.icon} /> */}
       <div className={css.list}>
         <NavLink className={activLink} to="/">
           HOME

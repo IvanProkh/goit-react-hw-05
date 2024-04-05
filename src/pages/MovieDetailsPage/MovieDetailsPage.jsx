@@ -63,8 +63,10 @@ export default function MovieDetailsPage() {
         )}
 
         <div>
-          <h3 className={css.title}>{movieDetail.title}</h3>
-          <p className={css.date}>({movieDetail.release_date})</p>
+          <div className={css.title}>
+            <h3 className={css.titleName}>{movieDetail.title}</h3>
+            <p className={css.date}>({movieDetail.release_date.slice(0, 4)})</p>
+          </div>
           {movieDetail.tagline !== '' && (
             <p className={css.tagline}>{movieDetail.tagline}</p>
           )}

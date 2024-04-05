@@ -1,7 +1,7 @@
 .section {
   display: flex;
   gap: 16px;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   background-color: white;
   padding: 20px;
   border-radius: 10px;
@@ -17,19 +17,24 @@
   width: 100%;
   max-height: 300px;
   height: 100%;
-  padding: 5px;
-  border: solid 2px #4a4e69;
 }
 
 .title {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.titleName {
   font-size: 46px;
-  color: #223d40;
+  color: black;
   font-weight: 900;
 }
 
 .date {
-  font-size: 12px;
+  font-size: 44px;
   margin-bottom: 16px;
+  color: red;
 }
 
 .tagline {
@@ -38,7 +43,7 @@
 
   padding: 10px;
   border-radius: 10px;
-  background-color: #bfbfbf;
+  background-color: grey;
 }
 
 .genresList {
@@ -61,15 +66,16 @@
 
 .overview {
   padding: 20px;
+  margin-bottom: 20px;
   border-radius: 10px;
-  background-color: #7d8b8c;
+  background-color: gray;
   height: 100%;
 }
 
 .goBack {
   padding: 10px;
   border-radius: 10px;
-  background-color: #bfbfbf;
+  background-color: gray;
   border: none;
   color: #0d0d0d;
   text-decoration: none;
@@ -84,7 +90,7 @@
 }
 
 .goBack:hover {
-  background-color: #223d40c9;
+  background-color: #ff2600c9;
 }
 
 .rightSection {
@@ -92,26 +98,22 @@
 }
 
 .linkTo {
-  padding: 10px;
-
   border-radius: 10px;
-  background-color: #bfbfbf;
-  border: none;
+  background-color: gray;
   color: #0d0d0d;
-  text-decoration: none;
   font-weight: bolder;
-  margin-top: 20px;
-  display: block;
-  margin-bottom: 10px;
-  width: 100px;
-  height: 30px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 115px;
+  height: 32px;
   margin-right: 10px;
 }
 
 .linkTo:hover,
 .linkTo:focus {
-  background-color: #223d40c9;
+  background-color: #ff2600c9;
 }
 
 .outlet {

@@ -17,24 +17,8 @@
   justify-content: center;
 }
 
-.btn {
-  padding: 10px;
-  border-radius: 10px;
-  background-color: #bfbfbf;
-  border: none;
-  color: #0d0d0d;
-  text-decoration: none;
-  font-weight: bolder;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-  cursor: pointer;
-}
-
-.btn:hover,
 .btnLoad:hover {
-  /* background-color: gray; */
-  color: red;
+  background-color: #ff2600c9;
   transform: scale(1.05);
 }
 
@@ -50,9 +34,9 @@
 .btnLoad {
   padding: 10px;
   border-radius: 10px;
-  background-color: black;
   border: none;
-  color: grey;
+  background-color: gray;
+  color: black;
   text-decoration: none;
   font-weight: bolder;
   display: block;
@@ -61,7 +45,6 @@
   margin-bottom: 20px;
   text-align: center;
   cursor: pointer;
-  opacity: 0.7;
 }
 
 .btnScroll {
@@ -78,6 +61,7 @@
 
 .btnScroll:hover {
   transform: scale(1.05);
+  opacity: 1;
 }
 
 .btnArrow {
