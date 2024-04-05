@@ -1,0 +1,50 @@
+.link {
+  font-size: 30px;
+  text-decoration: none;
+  color: gray;
+}
+
+.active {
+  color: red;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  color: red;
+
+  margin-bottom: 10px;
+}
+
+.title:hover {
+  cursor: default;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  padding: 28px;
+}
+
+.icon {
+  height: 38px;
+  width: 38px;
+}
+
+.icon:hover {
+  color: red;
+}
+
+.link:hover {
+  color: red;
+}

@@ -1,0 +1,142 @@
+.section {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 22px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-height: 400px;
+}
+
+.container {
+  padding: 10px 30px;
+}
+
+.img {
+  max-width: 500px;
+  width: 100%;
+  max-height: 300px;
+  height: 100%;
+  padding: 5px;
+  border: solid 2px #4a4e69;
+}
+
+.title {
+  font-size: 46px;
+  color: #223d40;
+  font-weight: 900;
+}
+
+.date {
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+.tagline {
+  font-size: 18px;
+  margin-bottom: 21px;
+
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #bfbfbf;
+}
+
+.genresList {
+  list-style-type: circle;
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.genre {
+  font-size: 16px;
+}
+
+.genres {
+  font-size: 18px;
+}
+
+.overviewTittle {
+  margin-left: 10px;
+}
+
+.overview {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #7d8b8c;
+  height: 100%;
+}
+
+.goBack {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #bfbfbf;
+  border: none;
+  color: #0d0d0d;
+  text-decoration: none;
+  font-weight: bolder;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  width: 115px;
+  cursor: pointer;
+}
+
+.goBack:hover {
+  background-color: #223d40c9;
+}
+
+.rightSection {
+  display: flex;
+}
+
+.linkTo {
+  padding: 10px;
+
+  border-radius: 10px;
+  background-color: #bfbfbf;
+  border: none;
+  color: #0d0d0d;
+  text-decoration: none;
+  font-weight: bolder;
+  margin-top: 20px;
+  display: block;
+  margin-bottom: 10px;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.linkTo:hover,
+.linkTo:focus {
+  background-color: #223d40c9;
+}
+
+.outlet {
+  display: block;
+}
+
+.navLinks {
+  display: flex;
+}
+
+.noPhoto {
+  background-color: #7d8b8c;
+  height: 300px;
+  width: 200px;
+  padding-top: 150px;
+  box-sizing: border-box;
+}
+
+.noPhotoText {
+  text-align: center;
+}
+
+@media screen and (min-width: 240px) and (max-width: 800px) {
+  .section {
+    display: block;
+    max-height: 900px;
+  }
+}

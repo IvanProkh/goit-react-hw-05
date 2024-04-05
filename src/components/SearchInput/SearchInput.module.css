@@ -1,0 +1,47 @@
+.input {
+  padding: 10px 30px;
+  max-width: 300px;
+  width: 100%;
+  margin-right: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.container {
+  margin: 30px 0px;
+  padding: 0 20px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.form input {
+  border: solid 1px black;
+}
+
+.form input:focus {
+  outline: solid red;
+  border: none;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: black;
+  border: none;
+  color: gray;
+  text-decoration: none;
+  font-weight: bolder;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: red;
+  transform: scale(1.03);
+}

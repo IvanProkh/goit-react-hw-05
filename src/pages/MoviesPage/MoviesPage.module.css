@@ -1,0 +1,87 @@
+.input {
+  padding: 10px 30px;
+  width: 300px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.container {
+  margin-top: 30px;
+  position: relative;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #bfbfbf;
+  border: none;
+  color: #0d0d0d;
+  text-decoration: none;
+  font-weight: bolder;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btnLoad:hover {
+  /* background-color: gray; */
+  color: red;
+  transform: scale(1.05);
+}
+
+.noMoviesText {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.load {
+  text-align: center;
+}
+
+.btnLoad {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: black;
+  border: none;
+  color: grey;
+  text-decoration: none;
+  font-weight: bolder;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.btnScroll {
+  position: fixed;
+  z-index: 1000;
+  background-color: black;
+  padding: 20px 22px;
+  border-radius: 50%;
+  border: none;
+  opacity: 0.5;
+  right: 30px;
+  bottom: 20px;
+}
+
+.btnScroll:hover {
+  transform: scale(1.05);
+}
+
+.btnArrow {
+  height: 20px;
+  width: 20px;
+  color: red;
+}

@@ -1,43 +1,44 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
+import { Suspense, lazy } from 'react';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+
+//~ ------ components ------
+import Navigation from './components/Navigation/Navigation';
+import MovieReviews from './components/MovieReviews/MovieReviews';
+import MovieCast from './components/MovieCast/MovieCast';
+
+//~ ------ pages ------
+const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
+const MoviesPage = lazy(() => import('./pages/MoviesPage/MoviesPage'));
+const MovieDetailsPage = lazy(() =>
+  import('./pages/MovieDetailsPage/MovieDetailsPage')
+);
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage/NotFoundPage'));
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount(count => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <Navigation></Navigation>
+
+      <Suspense fallback={<h3 className="load">Loading...</h3>}>
+        <Routes>
+          <Route path="/" element={<HomePage />}></Route>
+          <Route path="/movies" element={<MoviesPage />}></Route>
+          <Route
+            path="/movies/:movieId"
+            element={<MovieDetailsPage></MovieDetailsPage>}
+          >
+            <Route
+              path="movie-reviews"
+              element={<MovieReviews></MovieReviews>}
+            ></Route>
+            <Route path="movie-cast" element={<MovieCast></MovieCast>}></Route>
+          </Route>
+          <Route path="*" element={<NotFoundPage></NotFoundPage>}></Route>
+        </Routes>
+      </Suspense>
+    </div>
   );
 }
 
 export default App;
-
-// Маршруты
-
-// - "/" Home
-//   - / movies
-//     - / :movieId
-//       - / cast
-//       - / reviews
