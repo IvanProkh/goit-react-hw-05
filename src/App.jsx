@@ -22,13 +22,13 @@ function App() {
 
       <Suspense fallback={<h3 className="load">Loading...</h3>}>
         <Routes>
-          <Route path="/" element={<HomePage />}></Route>
-          <Route path="/movies" element={<MoviesPage />}></Route>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/movies" element={<MoviesPage />} />
           <Route path="/movies/:movieId" element={<MovieDetailsPage />}>
-            <Route path="movie-reviews" element={<MovieReviews />}></Route>
-            <Route path="movie-cast" element={<MovieCast />}></Route>
+            <Route path="movie-reviews" element={<MovieReviews />} />
+            <Route path="movie-cast" element={<MovieCast />} />
           </Route>
-          <Route path="*" element={<NotFoundPage />}></Route>
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>
     </div>
