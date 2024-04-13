@@ -1,11 +1,13 @@
 import { Suspense, lazy } from 'react';
-import './App.css';
 import { Route, Routes } from 'react-router-dom';
+import './App.css';
 
 //~ ------ components ------
 import Navigation from './components/Navigation/Navigation';
-import MovieReviews from './components/MovieReviews/MovieReviews';
-import MovieCast from './components/MovieCast/MovieCast';
+const MovieCast = lazy(() => import('./components/MovieCast/MovieCast'));
+const MovieReviews = lazy(() =>
+  import('./components/MovieReviews/MovieReviews')
+);
 
 //~ ------ pages ------
 const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
