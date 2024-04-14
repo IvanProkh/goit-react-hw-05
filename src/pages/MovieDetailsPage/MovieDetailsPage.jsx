@@ -92,11 +92,11 @@ export default function MovieDetailsPage() {
 
       <div>
         <div className={css.navLinks}>
-          <NavLink className={css.linkTo} to="movie-reviews">
+          <NavLink className={css.linkTo} to="reviews">
             Rewiews
           </NavLink>
 
-          <NavLink className={css.linkTo} to="movie-cast">
+          <NavLink className={css.linkTo} to="cast">
             Movie cast
           </NavLink>
         </div>
